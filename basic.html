@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Flip-o-Magic</title>
+</head>
+
+<body>
+  <div class="coin-container">
+    <h1 class="title">Heads or Tails</h1>
+    <br />
+
+    <div style="margin: 15px 0;">
+      <label>Choose your side:</label>
+      <button id="select-head" class="small-btn">Head</button>
+      <button id="select-tail" class="small-btn">Tail</button>
+      <p id="chosen-side" style="margin-top: 10px; color: #555;"></p>
+    </div>
+
+    <div class="coin" id="coin">
+      <img src="heads.png" alt="Coin Face" />
+    </div>
+
+    <button id="toss-button">FLIP NOW!</button>
+    <p class="result"></p>
+
+    <div id="stats" style="margin-top: 20px; color: #333; font-size: 1rem;">
+      <p>Total Flips: <span id="total">0</span></p>
+      <p>Heads: <span id="heads">0</span> | Tails: <span id="tails">0</span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
